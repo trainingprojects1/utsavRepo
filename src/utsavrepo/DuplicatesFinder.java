@@ -6,14 +6,12 @@
 package utsavrepo;
 
 import java.util.LinkedHashMap;
-import java.util.LinkedHashSet;
 import java.util.Map;
-import java.util.Set;
 import java.util.function.Function;
 
 public class DuplicatesFinder {
       public static void main(String[] args) {
-          Map<Character,Integer> map = new LinkedHashMap<>();
+        Map<Character,Integer> map = new LinkedHashMap<>();
         StringBuilder stringBuilder = new StringBuilder();
         Function<String, String> duplicate =str->{
             for(int i =0; i<str.length();i++){
@@ -27,7 +25,7 @@ public class DuplicatesFinder {
             }});
             return stringBuilder.toString();
         };
-         String dupCharInStringFormat = duplicate.apply("interface language");
+        String dupCharInStringFormat = duplicate.apply("interface language");
         System.out.println("Duplicate char in string format:"+dupCharInStringFormat);
     }
 }
