@@ -18,5 +18,6 @@ public class PalindromeChecker {
            str1.append(str.charAt(i));
        }
       return str.equals(str1.toString());
+//       jhkjhhkjjhkjkjh
     }
 }
